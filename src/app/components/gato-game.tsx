@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Tablero from "./tablero";
-import "./styles.css";
 const GatoGame = () => {
   const [historial, setHistorial] = useState([
     { cuadros: Array(9).fill(null) },
@@ -57,12 +56,15 @@ const GatoGame = () => {
           flex flex-col items-center justify-center w-screen h-screen
           bg-gradient-to-r from-fuchsia-500 to-cyan-500
           rounded-md shadow-lg
-          space-y-5
+          space-y-3
+          mb-10
     "
       >
         <h1
           className="
           text-#000 
+          font-bold
+          text-4xl
       "
         >
           Gato Game
@@ -82,20 +84,20 @@ const GatoGame = () => {
       "
       >
         <button
-          className="bg-transparent hover:bg-[#dc2626] text-[#dc2626] font-semibold hover:text-white py-2 px-4 border border-[#dc2626] hover:border-transparent rounded"
+          className="bg-transparent hover:bg-[#dc2626] text-[#dc2626] font-semibold hover:text-white py-2 px-4 border border-[#dc2626] hover:border-transparent rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
           onClick={retroceder}
         >
           {" "}
           Retroceder
         </button>
         <button
-          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
           onClick={avanzar}
         >
           Avanzar
         </button>
         <button
-          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          className="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
           onClick={reiniciar}
         >
           Reiniciar

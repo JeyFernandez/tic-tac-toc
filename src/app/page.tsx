@@ -1,4 +1,4 @@
-import GatoGame from './components/screen/gato-game'
+import GatoGame from './components/gato-game'
 
 
 export default function Home() {

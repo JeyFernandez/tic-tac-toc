@@ -1,4 +1,4 @@
-// Tablero.js
+
 import React from "react";
 import Cuadro from "./cuadros";
 interface TableroProps {
